@@ -117,6 +117,7 @@ namespace G64Installer
             EmbeddedExeRunner.RunEmbeddedExe("Robby.exe", "");
             EmbeddedExeRunner.RunEmbeddedExe("Bonzi.exe", "");
             EmbeddedExeRunner.RunEmbeddedExe("tv_enua.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("AgentPatch.exe", "");
 
             return 0;
         }

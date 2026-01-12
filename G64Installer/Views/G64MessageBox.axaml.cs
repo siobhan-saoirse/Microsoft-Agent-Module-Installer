@@ -41,11 +41,6 @@ namespace G64Installer.Views
             void AddButton(string caption, MessageBoxResult r, bool def = false)
             {
                 var btn = new Button { Content = caption };
-                btn.Click += (_, __) => {
-                    res = r;
-                    msgbox.Close();
-                    RegHelper.ApplyEmbeddedRegFile("SetAgentCompat.reg");
-                };
                 buttonPanel.Children.Add(btn);
                 if (def)
                     res = r;
