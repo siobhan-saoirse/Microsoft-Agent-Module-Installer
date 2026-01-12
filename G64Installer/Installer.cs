@@ -16,7 +16,7 @@ namespace G64Installer
 {
     internal class Installer
     {
-        const string RELEASES_URL = "https://api.github.com/repos/ckosmic/g64/releases";
+        const string RELEASES_URL = "https://api.github.com/repos/siobhan-saoirse/microsoft-agent-module/releases";
 
         public static dynamic releases = null;
 
@@ -91,7 +91,7 @@ namespace G64Installer
         {
             if (releases == null)
             {
-                vm.InstallStatus = "Getting G64 release info...";
+                vm.InstallStatus = "Getting Microsoft Agent Module release info...";
                 await GetReleases();
                 if (releases == null)
                     // Failed to get releases info
@@ -110,7 +110,13 @@ namespace G64Installer
             vm.InstallStatus = "Downloading release...";
             await DownloadRelease(zipUrl, zipName, installDir, vm);
             vm.InstallStatus = "Success!";
-
+            EmbeddedExeRunner.RunEmbeddedExe("MSAgent.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Genie.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Peedy.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Merlin.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Robby.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Bonzi.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("tv_enua.exe", "");
 
             return 0;
         }
@@ -124,14 +130,7 @@ namespace G64Installer
                 return 1;
 
             vm.InstallStatus = "Removing installed files...";
-            File.Delete(Path.Combine(installDir, "bin", "win64", "sm64.dll"));
-            File.Delete(Path.Combine(installDir, "bin", "win64", "bz2.dll"));
-            File.Delete(Path.Combine(installDir, "bin", "win64", "jsoncpp.dll"));
-            File.Delete(Path.Combine(installDir, "bin", "win64", "libcurl.dll"));
-            File.Delete(Path.Combine(installDir, "bin", "win64", "zip.dll"));
-            File.Delete(Path.Combine(installDir, "bin", "win64", "zlib1.dll"));
-            File.Delete(Path.Combine(installDir, "garrysmod", "lua", "bin", "gmcl_g64_win64.dll"));
-            File.Delete(Path.Combine(installDir, "garrysmod", "lua", "bin", "gmcl_g64_updater_win64.dll"));
+            File.Delete(Path.Combine(installDir, "garrysmod", "lua", "bin", "gmcl_msagent_win32.dll"));
             vm.InstallStatus = "Success!";
 
             return 0;

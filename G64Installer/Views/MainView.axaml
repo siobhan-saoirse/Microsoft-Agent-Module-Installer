@@ -6,7 +6,7 @@
              x:Class="G64Installer.Views.MainView">
 	<DockPanel>
 		<StackPanel Margin="10" Spacing="10" DockPanel.Dock="Top">
-			<TextBlock FontSize="30" FontWeight="ExtraBlack">G64 Installer</TextBlock>
+			<TextBlock FontSize="30" FontWeight="ExtraBlack">Microsoft Agent Module Installer</TextBlock>
 			<Grid ColumnDefinitions="4.5*, *" >
 				<TextBox Grid.Column="0" Text="{Binding GameDirectory}" Watermark="Garry's Mod game directory"></TextBox>
 				<Button Grid.Column="1" Command="{Binding OnBrowseClicked}" HorizontalAlignment="Right">Browse...</Button>

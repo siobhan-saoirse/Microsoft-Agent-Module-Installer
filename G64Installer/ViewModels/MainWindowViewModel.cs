@@ -14,7 +14,7 @@ namespace G64Installer.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public string Title => "G64 Installer";
+        public string Title => "Microsoft Agent Module Installer";
 
         public string GameDirectory
         {
@@ -38,7 +38,7 @@ namespace G64Installer.ViewModels
         { 
             get
             {
-                return "Latest G64 version: " + Installer.releases[0].tag_name;
+                return "Latest Microsoft Agent Module version: " + Installer.releases[0].tag_name;
             }
         }
 
@@ -58,7 +58,7 @@ namespace G64Installer.ViewModels
             switch(result)
             {
                 case 0:
-                    G64MessageBox.Show(MainWindow.Instance, "Successfully installed G64!", "Success", MessageBoxButtons.Ok);
+                    G64MessageBox.Show(MainWindow.Instance, "Successfully installed the Microsoft Agent Module!", "Success", MessageBoxButtons.Ok);
                     break;
                 case 1:
                     G64MessageBox.Show(MainWindow.Instance, "The folder you've selected is not a valid Garry's Mod folder.", "Error", MessageBoxButtons.Ok);
@@ -75,7 +75,7 @@ namespace G64Installer.ViewModels
             switch (result)
             {
                 case 0:
-                    G64MessageBox.Show(MainWindow.Instance, "Successfully uninstalled G64!", "Success", MessageBoxButtons.Ok);
+                    G64MessageBox.Show(MainWindow.Instance, "Successfully uninstalled the Microsoft Agent Module!", "Success", MessageBoxButtons.Ok);
                     break;
                 case 1:
                     G64MessageBox.Show(MainWindow.Instance, "The folder you've selected is not a valid Garry's Mod folder.", "Error", MessageBoxButtons.Ok);

@@ -7,7 +7,7 @@
 		CanResize="False"
 		WindowStartupLocation="CenterScreen"
 		SizeToContent="WidthAndHeight"
-		Icon="/Assets/avalonia-logo.ico"
+		Icon="/Assets/favicon.ico"
 		Padding="20">
 	<StackPanel HorizontalAlignment="Center">
 		<TextBlock HorizontalAlignment="Center" Name="Text"/>
