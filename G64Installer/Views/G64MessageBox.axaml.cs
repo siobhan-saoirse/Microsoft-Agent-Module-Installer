@@ -44,7 +44,6 @@ namespace G64Installer.Views
                 btn.Click += (_, __) => {
                     res = r;
                     msgbox.Close();
-                    RegHelper.ApplyEmbeddedRegFile("SetAgentCompat.reg");
                 };
                 buttonPanel.Children.Add(btn);
                 if (def)

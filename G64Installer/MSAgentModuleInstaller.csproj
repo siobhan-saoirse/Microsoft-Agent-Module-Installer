@@ -28,11 +28,13 @@
   </ItemGroup>
   <ItemGroup>
 	  <EmbeddedResource Include="Resources\MSAgent.exe" />
-	  <EmbeddedResource Include="Resources\Genie.exe" />
+	  <EmbeddedResource Include="Resources\Bonzi.exe" />
+	  <EmbeddedResource Include="Resources\Kinito.exe" />
 	  <EmbeddedResource Include="Resources\Peedy.exe" />
 	  <EmbeddedResource Include="Resources\Merlin.exe" />
+	  <EmbeddedResource Include="Resources\Genie.exe" />
 	  <EmbeddedResource Include="Resources\Robby.exe" />
-	  <EmbeddedResource Include="Resources\Bonzi.exe" />
+	  <EmbeddedResource Include="Resources\max2.exe" />
 	  <EmbeddedResource Include="Resources\tv_enua.exe" />
 	  <EmbeddedResource Include="Resources\AgentPatch.exe" />
 	</ItemGroup>

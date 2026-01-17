@@ -111,11 +111,13 @@ namespace G64Installer
             await DownloadRelease(zipUrl, zipName, installDir, vm);
             vm.InstallStatus = "Success!";
             EmbeddedExeRunner.RunEmbeddedExe("MSAgent.exe", "");
-            EmbeddedExeRunner.RunEmbeddedExe("Genie.exe", "");
-            EmbeddedExeRunner.RunEmbeddedExe("Peedy.exe", "");
-            EmbeddedExeRunner.RunEmbeddedExe("Merlin.exe", "");
-            EmbeddedExeRunner.RunEmbeddedExe("Robby.exe", "");
             EmbeddedExeRunner.RunEmbeddedExe("Bonzi.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Peedy.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("max2.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Kinito.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Merlin.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Genie.exe", "");
+            EmbeddedExeRunner.RunEmbeddedExe("Robby.exe", "");
             EmbeddedExeRunner.RunEmbeddedExe("tv_enua.exe", "");
             EmbeddedExeRunner.RunEmbeddedExe("AgentPatch.exe", "");
 
